@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3085055680384776723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3085055680384776721}
+  - component: {fileID: 3085055680384776722}
+  m_Layer: 0
+  m_Name: Enemy Spawner
+  m_TagString: spawner
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3085055680384776721
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3085055680384776723}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -36.2, y: 34.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3085055680384776722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3085055680384776723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1881a8f32499d9543a0d1d5e19195ef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 5574035660125077447, guid: 6b973f70e5f6802469a87ee4446b0fe1,
+    type: 3}
+  enemyBPrefab: {fileID: 5675716875424961639, guid: 9e42d2a78ca619548b5a38c25cf07bab,
+    type: 3}
+  miniPrefab: {fileID: 747761622046553241, guid: b7d8efe1c2fb41d45b9147cfd21ebcbb,
+    type: 3}
+  spawnPoint: {fileID: 3085055680384776721}
+  shootingIntervalEnemyA: 0
+  randomizerEnemyAInt: 0
+  bounceEnemyInt: 0
+  enemyInitialShoot: 0
+  EnemyBshootingCooldown: 0
+  enemyBAccuracy: 0
+  movement: {x: 1, y: 1, z: 0}
+  speed: 0
+  self: {fileID: 3085055680384776723}
+  sniperThreshold: 70
+  miniThreshold: 60
+  corner: {fileID: 0}
+  waveCounter: 0
+  waveMax: 10
+  spawnRate: 0
+  bossSpawned: 0
+  bossAlive: 0
+  bossSpawner: {fileID: 0}
