@@ -36,6 +36,6 @@ public class blankTimer : MonoBehaviour
             display = cooldownRefresh - Time.time;
         }
 
-        Blast.text = "Blank Cooldown (Space):   " + display.ToString("f0");
+        Blast.text = display.ToString("f0");
     }
 }

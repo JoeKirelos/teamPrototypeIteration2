@@ -32,7 +32,17 @@ public class NukeTimer : MonoBehaviour
             nukeDisplay = nukeRefresh - Time.time;
         }
 
-        Nuke.text = "Nuke Cooldown (E):   " + nukeDisplay.ToString("f0");
+        Nuke.text = nukeDisplay.ToString("f0");
+
+        if (nukeDisplay < 0.1)
+        {
+            Nuke.color = Color.green;
+            Nuke.fontSize = 40;
+        } else
+        {
+            Nuke.color = Color.white;
+            Nuke.fontSize = 32;
+        }
     }
 }
 

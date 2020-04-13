@@ -33,7 +33,18 @@ public class DeflectTimer : MonoBehaviour
                 deflectDisplay = deflectRefresh - Time.time;
             }
 
-            Deflect.text = "Deflect (Right Click):   " + deflectDisplay.ToString("f0");
+            Deflect.text = deflectDisplay.ToString("f0");
+
+            if (deflectDisplay < 0.1)
+            {
+                Deflect.color = Color.green;
+                Deflect.fontSize = 40;
+            }
+            else
+            {
+                Deflect.color = Color.white;
+                Deflect.fontSize = 32;
+            }
         }
     }
 }

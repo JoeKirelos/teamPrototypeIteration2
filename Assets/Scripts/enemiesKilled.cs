@@ -18,7 +18,7 @@ public class enemiesKilled : MonoBehaviour
     void Update()
     {
         float killValue = Player.enemiesKilled;
-        Kills.text = "Prey Wrangled:    " + killValue;
+        Kills.text = killValue.ToString();
         
         if (Player.enemiesKilled <= 5)
         {

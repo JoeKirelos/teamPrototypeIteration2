@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
     }
     IEnumerator Nuke()
     {
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown("space"))
         {
             if(Time.time > nukeStart + nukeCD)
             {
@@ -88,7 +88,7 @@ public class Player : MonoBehaviour
     }
     IEnumerator Blank()
     {
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown("e"))
 
 
         {
