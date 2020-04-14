@@ -37,5 +37,16 @@ public class blankTimer : MonoBehaviour
         }
 
         Blast.text = display.ToString("f0");
+
+        if (display < 0.1)
+        {
+            Blast.color = Color.green;
+            Blast.fontSize = 40;
+        }
+        else
+        {
+            Blast.color = Color.white;
+            Blast.fontSize = 32;
+        }
     }
 }
